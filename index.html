@@ -1,26 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Product landing</title>
+    <meta charset="UTF-8" />
+    <!-- This (metadata) is used for search engines -->
+    <meta name="keywords" content="HTML, CSS, JavaScript, landing page" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <script
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      defer
+    ></script>
+    <script src="js/index.js" defer></script>
   </head>
 
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header id="header">
+      <nav id="nav-bar" class="flex-container">
+        <a href="#video" class="nav-link">Features</a>
+        <a href="#video" class="nav-link">How It Works</a>
+        <a href="#video" class="nav-link">Pricing</a>
+      </nav>
+      <img
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+        alt="image of the logo"
+        id="header-img"
+      />
+    </header>
 
-    <!--
+    <h1>Handcrafted, home-made masterpieces</h1>
 
-    Hello Camper!
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+      />
+      <br />
+      <input id="submit" type="submit" value="GET STARTED" />
+    </form>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+    <div id="main-div">
+      <div>
+        <h2>Premium Materials</h2>
+        <p>
+          Our trombones use the shiniest brass which is sourced locally. This
+          will increase the longevity of your purchase.
+        </p>
+      </div>
 
-    - The freeCodeCamp Team
+      <div>
+        <h2>Fast Shipping</h2>
+        <p>
+          We make sure you recieve your trombone as soon as we have finished
+          making it. We also provide free returns if you are not satisfied.
+        </p>
+      </div>
 
-    -->
-    <script  src="js/index.js"></script>
+      <div>
+        <h2>Quality Assurance</h2>
+        <p>
+          For every purchase you make, we will ensure there are no damages or
+          faults and we will check and test the pitch of your instrument.
+        </p>
+      </div>
+    </div>
+
+    <iframe
+      id="video"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/tRZGeaHPoaw"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <section id="flexbox-pricing">
+      <div class="flexbox-pricing-boxes">
+        TENOR TROMBONE
+        <button type="submit" class="btn">SELECT</button>
+      </div>
+      <div class="flexbox-pricing-boxes">
+        BASS TROMBONE
+        <button type="submit" class="btn">SELECT</button>
+      </div>
+      <div class="flexbox-pricing-boxes">
+        VALVE TROMBONE <button type="submit" class="btn">SELECT</button>
+      </div>
+    </section>
   </body>
 </html>

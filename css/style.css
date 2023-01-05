@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,700&family=Zen+Dots&display=swap");
+
+@media (max-width: 800px) {
+  body {
+    font-size: 50px;
+  }
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+body {
+  text-align: center;
+  background-color: #eee;
+}
+
+#video {
+  margin-top: 250px;
+}
+
+#submit {
+  background-color: #f1c40f;
+  font-weight: bold;
+  padding: 10px 10px 10px 20px;
+  margin-top: 20px;
+}
+
+#email {
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-container > a {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+
+  text-decoration: none;
+}
+
+#header-img {
+  width: 300px;
+}
+
+#main-div,
+.flexbox-pricing-boxes {
+  text-align: left;
+  margin-left: 25%;
+  font-family: "Lato";
+}
+
+.flexbox-pricing-boxes {
+  display: flex;
+  border: 2px solid black;
+  margin: 5px;
+  text-align: center;
+  width: 200px;
+  height: 250px;
+}
+
+#flexbox-pricing {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.btn {
+  height: 30px;
+  width: 60px;
+}
