@@ -1,20 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,700&family=Zen+Dots&display=swap");
 
-@media (max-width: 800px) {
-  body {
-    font-size: 50px;
-  }
+* {
+  color: black;
 }
 
 #nav-bar {
   position: fixed;
-  top: 0;
   width: 100%;
+  top: 0;
 }
 
 body {
+  margin-top: 10%;
   text-align: center;
   background-color: #eee;
+}
+#header-img {
+  position: absolute;
+  width: 300px;
+  left: 5%;
+  top: 5%;
 }
 
 #video {
@@ -46,10 +51,6 @@ body {
   text-decoration: none;
 }
 
-#header-img {
-  width: 300px;
-}
-
 #main-div,
 .flexbox-pricing-boxes {
   text-align: left;
@@ -75,4 +76,19 @@ body {
 .btn {
   height: 30px;
   width: 60px;
+}
+
+/***********************/
+
+li,
+a {
+  list-style: none;
+  text-decoration-line: none;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 50px;
+    color: #f1c40f;
+  }
 }
