@@ -4,6 +4,22 @@
   color: black;
 }
 
+nav {
+  background-color: #eee;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10%;
+  top: 0;
+}
+
+nav > ul > li {
+  display: flex;
+  padding-right: 40px;
+}
+
 #nav-bar {
   position: fixed;
   width: 100%;
@@ -11,30 +27,38 @@
 }
 
 body {
-  margin-top: 10%;
   text-align: center;
   background-color: #eee;
+  margin-top: 10%;
 }
 #header-img {
   position: absolute;
-  width: 300px;
+  width: 30%;
   left: 5%;
-  top: 5%;
-}
-
-#video {
-  margin-top: 250px;
+  top: 20%;
 }
 
 #submit {
-  background-color: #f1c40f;
-  font-weight: bold;
-  padding: 10px 10px 10px 20px;
   margin-top: 20px;
 }
 
+.buttons {
+  background-color: #f1c40f;
+  font-weight: bold;
+  padding: 10px 10px 10px 10px;
+  border: none;
+  margin-right: 50px;
+}
+
+.buttons:hover {
+  background-color: #c09a01;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
 #email {
-  padding: 20px;
+  padding: 5px;
+  width: 40%;
 }
 
 .flex-container {
@@ -57,14 +81,8 @@ body {
   margin-left: 25%;
   font-family: "Lato";
 }
-
-.flexbox-pricing-boxes {
-  display: flex;
-  border: 2px solid black;
-  margin: 5px;
-  text-align: center;
-  width: 200px;
-  height: 250px;
+#video {
+  margin-top: 50px;
 }
 
 #flexbox-pricing {
@@ -73,9 +91,40 @@ body {
   margin-top: 100px;
 }
 
-.btn {
+.flexbox-pricing-boxes {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  margin: 5px;
+  width: 200px;
+  height: 250px;
+  align-items: center; /*OMG this is for aligning the items to the center O_O*/
+}
+
+section > div > div {
+  background-color: #ddd;
+  width: 90%;
+  text-align: center;
+  padding: 5%;
+}
+
+.dollars {
+  text-align: center;
+  width: 100px;
+}
+
+.btn-footer {
+  position: absolute;
+  margin-top: 100%;
+  margin-left: 5em;
   height: 30px;
-  width: 60px;
+  width: 70px;
+}
+
+.flexbox-pricing-boxes > p {
+  text-align: center;
+  margin: -5%;
 }
 
 /***********************/
@@ -91,4 +140,31 @@ a {
     font-size: 50px;
     color: #f1c40f;
   }
+}
+
+footer {
+  display: flex;
+  background-color: rgb(210, 210, 210);
+  justify-content: flex-end;
+}
+
+footer > ul {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+footer > ul > li {
+  padding: 10px;
+  font-size: 15px;
+  margin-top: 2%;
+  font-family: "Lato";
+}
+
+footer > span {
+  display: flex;
+  height: 20px;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 55px;
 }

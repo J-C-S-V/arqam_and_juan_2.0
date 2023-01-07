@@ -21,21 +21,21 @@
       <nav id="nav-bar" class="flex-container">
         <ul>
           <li>
-            <a href="#video" class="nav-link">Features</a>
+            <a href="#main-div" class="nav-link">Features</a>
           </li>
           <li>
             <a href="#video" class="nav-link">How It Works</a>
           </li>
           <li>
-            <a href="#video" class="nav-link">Pricing</a>
+            <a href="#flexbox-pricing" class="nav-link">Pricing</a>
           </li>
         </ul>
+        <img
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+          alt="image of the logo"
+          id="header-img"
+        />
       </nav>
-      <img
-        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
-        alt="image of the logo"
-        id="header-img"
-      />
     </header>
 
     <h1>Handcrafted, home-made masterpieces</h1>
@@ -48,7 +48,13 @@
         placeholder="Enter your email address"
       />
       <br />
-      <input id="submit" type="submit" value="GET STARTED" />
+      <input
+        id="submit"
+        type="submit"
+        value="GET STARTED"
+        class="buttons"
+        required
+      />
     </form>
 
     <div id="main-div">
@@ -81,7 +87,7 @@
       id="video"
       width="560"
       height="315"
-      src="https://www.youtube.com/embed/tRZGeaHPoaw"
+      src="https://www.youtube.com/embed/y8Yv4pnO7qc"
       title="YouTube video player"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -90,16 +96,44 @@
 
     <section id="flexbox-pricing">
       <div class="flexbox-pricing-boxes">
-        TENOR TROMBONE
-        <button type="submit" class="btn">SELECT</button>
+        <div>TENOR TROMBONE</div>
+        <h2 class="dollars">$600</h2>
+        <p>
+          Lorem ipsum. <br />
+          Lorem ipsum.<br />
+          Lorem ipsum dolor.<br />
+          Lorem ipsum.
+        </p>
+        <button type="submit" class="btn-footer buttons">SELECT</button>
       </div>
       <div class="flexbox-pricing-boxes">
-        BASS TROMBONE
-        <button type="submit" class="btn">SELECT</button>
+        <div>BASS TROMBONE</div>
+        <h2 class="dollars">$900</h2>
+        <p>
+          Lorem ipsum.<br />
+          Lorem ipsum.<br />
+          Lorem ipsum dolor.<br />
+          Lorem ipsum.
+        </p>
+        <button type="submit" class="btn-footer buttons">SELECT</button>
       </div>
       <div class="flexbox-pricing-boxes">
-        VALVE TROMBONE <button type="submit" class="btn">SELECT</button>
+        <div>VALVE TROMBONE</div>
+        <h2 class="dollars">$1200</h2>
+        <p>
+          Lorem ipsum. <br />Lorem ipsum. <br />Lorem ipsum dolor. <br />Lorem
+          ipsum.
+        </p>
+        <button type="submit" class="btn-footer buttons">SELECT</button>
       </div>
     </section>
+    <footer>
+      <ul>
+        <li>Privacy</li>
+        <li>Terms</li>
+        <li>Contact</li>
+      </ul>
+      <span>Copyright 2016, Original Trombones</span>
+    </footer>
   </body>
 </html>
